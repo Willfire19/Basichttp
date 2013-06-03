@@ -1,1 +1,54 @@
-http_basic_home.html
+<!DOCTYPE html>
+<html>
+	<body>
+
+		<div id="container" style="width:100%;height:100%">
+
+			<div id="header" style="background-color:#0000FF;">
+				<h1 style="margin-bottom:0;">HTTPBASIC.com</h1>
+			</div>
+
+			<div id="menu" style="background-color:#00CCFF;height:100%;width:20%;float:left;">
+				<b>How To Use This Site</b><br>
+				1) Input a Username<br>
+				2) Input a Password<br>
+				3) Hit Encode. The result will return the url of a basic access authorization transaction.<br>
+				<br>
+				OR<br>
+				<br>
+				1) Input an encoded base64 string<br>
+				2) Hit Decode. The result will be the username and the password.<br>
+				<br>
+				Made by Joshua Angeley<br>
+				Mah First Javascript program
+			</div>
+
+			<div id="content" style="background-color:#EEEEEE;height:500px;width:80%;float:left;">
+				<form>
+					Username: <input type="text" id="username" name="username"><br>
+					Password: <input type="text" id="password" name="password"><br>
+					Decode Base64: <input type="text" id="decode" name="decode"><br>
+					<input type="button" value="Encode" name="encode" id="encode">
+					<input type="button" value="Decode" name="decode_button" id="decode_button">
+				</form>
+				<!-- The p tag will be used to display any errors in the submission -->
+				<p></p><br>
+				<p7></p7><br>
+				<p6></p6><br>
+				<p1></p1><br>
+				<p2></p2><br>
+				<p5></p5><br>
+				<p3>The Answer: </p3><br>
+				<p4>Authorization: Basic </p4><br>
+			</div>
+
+			<div id="footer" style="background-color:#0099FF;clear:both;text-align:center;">
+				I got this html layout from W3Schools. Please don't sue me. Copyright © W3Schools.com
+			</div>
+
+		</div>
+	</body>
+	<script src="jquery.min.js"></script>
+	<script src="base64.js"></script>
+	<script src="decode_base64.js"></script>
+</html>
