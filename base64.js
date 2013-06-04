@@ -13,7 +13,7 @@ $(document).ready(function(){
 				$("p5").text('The string that will be encoded is: '+encode_string);
 				$("p1").text('The Username is: '+username);
 				$("p2").text('The Password is: '+password);
-				$("#decode").val("Basic"+base64_encode);
+				$("#decode").val("Basic "+base64_encode);
 			}
 		e.preventDefault();
 	});
