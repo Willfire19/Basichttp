@@ -1,0 +1,36 @@
+* { margin: 0; padding: 0; outline: 0; border: 0; }
+
+/* HTML5 tags */
+head, container, content, footer, figure {
+	display: block;
+}
+
+@font-face {
+	font-family: ;
+}
+
+h1 { color: #000000; font-size: 40px; position: relative; top: 15px; }
+
+input[class="encode"] { width: 160px; height: 10px; }
+input[class="decode"] { width: 320px; height: 10px; }
+label { color: #ff5400; }
+input { background-color: rgba(255, 255, 255, 2); border: none; padding: 10px; 
+	font-family: Keffeesatz, Arial; 
+	color: #999999; font-size: 12px; -webkit-border-radius: 3px; 
+	-webkit-box-shadow: 0px 2px 0px rgba(153, 153, 153, 0.4);
+	margin-bottom: 10px; 
+	margin-top: 0px; }
+input:focus { border: 5px solid #ff5400; background-color: rgba(255, 255, 255, 1); }
+
+input[type="button"] { border: none; cursor: pointer; color: #FFF; font-size: 12px;
+ background-color: #66CCFF; padding: 8px 36px 8px 36px; -webkit-border-radius: 3px;
+ -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.4);
+  border-bottom: 0px solid rgba(0, 0, 0, 0.4); border-top: 0px solid 
+  rgba(255, 255, 255, 0.6);
+	background: -webkit-gradient(
+	    linear,
+	    left bottom,
+	    left top,
+	);
+	
+}

@@ -1,36 +1,27 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 	<body>
 
-		<div id="container" style="width:100%;height:100%">
+		<div id="container" style="width:960px;background-color:#CCCCCC">
+				
+				<div id="head" style=>
+					<!--<h1 style="margin-bottom:0;">HTTPBASIC.com</h1>-->
+					<h1>HTTPBASIC.com</h1>
+				
+					<h2>
+					Input a Username and a Password and hit Encode to get the url of a basic access authorization transaction. Input an Encoded base64 string and hit Decode. The result will be the username and the password.
+					</h2>
 
-			<div id="header" style="background-color:#0000FF;">
-				<h1 style="margin-bottom:0;">HTTPBASIC.com</h1>
-			</div>
+				</div>
 
-			<div id="menu" style="background-color:#00CCFF;height:100%;width:20%;float:left;">
-				<p2>
-					<b>How To Use This Site</b><br>
-					1) Input a Username<br>
-					2) Input a Password<br>
-					3) Hit Encode. The result will return the url of a basic access authorization transaction.<br>
-					<br>
-					OR<br>
-					<br>
-					1) Input an encoded base64 string<br>
-					2) Hit Decode. The result will be the username and the password.<br>
-					<br>
-					Made by Joshua Angeley<br>
-					My First Javascript program
-				</p2>
-			</div>
-
-			<div id="content" style="background-color:#EEEEEE;height:500px;width:80%;float:left;">
+			<div id="content" style="background-color:#CCCCCC;height:500px;width:80%;float:left;">
 				<form>
-					Username: <input type="text" id="username" name="username"><br>
-					Password: <input type="text" id="password" name="password"><br>
-					Decode Base64: <input type="text" id="decode" name="decode"><br>
-					<input type="button" value="Encode" name="encode" id="encode">
+					<input type="text" class="encode" id="username" name="username" value="Username">
+					<input type="text" class="encode" id="password" name="password" value="Password">
+					<input type="button" value="Encode" name="encode" id="encode"><br>
+					<input type="text" class="decode" id="decode" name="decode" value="Base64 String">
 					<input type="button" value="Decode" name="decode_button" id="decode_button">
 				</form>
 				<!-- This p tag will be used to display any errors in the submission -->
@@ -38,7 +29,9 @@
 			</div>
 
 			<div id="footer" style="background-color:#0099FF;clear:both;text-align:center;">
-				I got this html layout from W3Schools. Please don't sue me. Copyright © W3Schools.com
+				© 2013 HTTPbasic * Proudly made by CoshX Labs
+				<a href="https://twitter.com/coshxlabs">Follow us on Twitter</a>
+				<a href="https://github.com/coshx">Followus on Github</a>
 			</div>
 
 		</div>
