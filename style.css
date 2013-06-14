@@ -9,10 +9,20 @@ head, container, content, footer, figure {
 	font-family: ;
 }
 
-h1 { color: #000000; font-size: 40px; position: relative; top: 15px; }
+header { position: relative; padding-bottom: 15px; text-align: center;}
+
+h1 { color: #000; font-size: 30px; position: relative; top: 30px; 
+		bottom: 15px; text-align: center;}
+
+h2 { color: #000; font-size: 14px; position: relative; top: 30px; padding-top: 20px; 
+		 text-align: center;}
+
+#content { padding-top: 70px; text-align: center;}
+
+
 
 input[class="encode"] { width: 160px; height: 10px; }
-input[class="decode"] { width: 320px; height: 10px; }
+input[class="decode"] { width: 344px; height: 10px; }
 label { color: #ff5400; }
 input { background-color: rgba(255, 255, 255, 2); border: none; padding: 10px; 
 	font-family: Keffeesatz, Arial; 
@@ -24,13 +34,23 @@ input:focus { border: 5px solid #ff5400; background-color: rgba(255, 255, 255, 1
 
 input[type="button"] { border: none; cursor: pointer; color: #FFF; font-size: 12px;
  background-color: #66CCFF; padding: 8px 36px 8px 36px; -webkit-border-radius: 3px;
- -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.4);
+ -webkit-box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.12);
   border-bottom: 0px solid rgba(0, 0, 0, 0.4); border-top: 0px solid 
   rgba(255, 255, 255, 0.6);
-	background: -webkit-gradient(
-	    linear,
-	    left bottom,
-	    left top,
+  text-shadow: ;
+
+  background-image: linear-gradient(bottom, rgb(1,162,221) 34%, rgb(0,172,235) 67%);
+  background-image: -o-linear-gradient(bottom, rgb(1,162,221) 34%, rgb(0,172,235) 67%);
+  background-image: -moz-linear-gradient(bottom, rgb(1,162,221) 34%, rgb(0,172,235) 67%);
+	background-image: -webkit-linear-gradient(bottom, rgb(1,162,221) 34%, rgb(0,172,235) 67%);
+	background-image: -ms-linear-gradient(bottom, rgb(1,162,221) 34%, rgb(0,172,235) 67%);
+
+	background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.34, rgb(1,162,221)),
+	color-stop(0.67, rgb(0,172,235))
 	);
 	
 }
