@@ -1,5 +1,6 @@
 * { margin: 0; padding: 0; outline: 0; border: 0; }
 
+
 /* HTML5 tags */
 head, container, content, footer, figure {
 	display: block;
@@ -9,7 +10,8 @@ head, container, content, footer, figure {
 	font-family: ;
 }
 
-#container { width: 960px; background-color:#CCCCCC }
+/*#container { width: 960px; background-color:#CCCCCC }*/
+#container { width: max; background-color:#CCCCCC }
 
 header { position: relative; padding-bottom: 15px; text-align: center;}
 
@@ -19,7 +21,7 @@ h1 { color: #000; font-size: 30px; position: relative; top: 30px;
 h2 { color: #000; font-size: 14px; position: relative; top: 30px; padding-top: 20px; 
 		 text-align: center;}
 
-#content { padding-top: 70px; padding-bottom: 60px; text-align: center;}
+#content { padding-top: 70px; padding-bottom: 60px; padding-left: 10px; text-align: center;}
 
 input[class="encode"] { width: 160px; height: 10px; border-spacing: 20px; }
 input[class="decode"] { width: 354px; height: 10px; }
@@ -57,7 +59,7 @@ p { color: #FF0000; font-size: 14px; position: relative; top: 0px;
 		bottom: 15px; text-align: center;}
 
 footer { background-color:#CCCCCC; clear:both; text-align:center; padding-top: 0px; padding-bottom: 90px;
-				 padding-left: 100px; padding-right: 100px; }
+				 padding-left: 200px; padding-right: 200px; }
 
 #Copyright { float: left;}
 
@@ -68,3 +70,25 @@ p2 { color: #000; font-size: 10px;}
 a:link { color: #0066CC;}
 
 a:visited { color: #0099CC;}
+
+/* @media Rule */
+@media all and (max-width: 819px){
+	#Copyright, #links {
+		float:none; 
+	}
+	footer {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+
+@media all and (max-width: 395px){
+	input {
+		margin-right: 45px;
+	}
+	input[class="decode"] {
+		width: 90%; height: 10px;
+	}
+
+
+}
